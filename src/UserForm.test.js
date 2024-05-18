@@ -6,7 +6,7 @@ import UserForm from "./UserForm";
 // 1. render the component - with props if it has any
 // 2. manipulate the component and find the element in it
 //    find/ select the element which we are going to test
-//  3 make a Assertion - make sure the component what we expect it to do
+//  3 make an Assertion - make sure the component what we expect it to do
 // 4. Commands Line-start the server - npm start
 // 5. Run all test in the commands Line - npm run test
 
@@ -35,7 +35,28 @@ test("it shows two import and a button", () => {
   const inputs = screen.getAllByRole("textbox");
   const button = screen.getByRole("button");
 
-  //  3 make a Assertion - make sure the component what we expect it to do
+  //  3 make an Assertion - make sure the component what we expect it to do
   expect(inputs).toHaveLength(2);
   expect(button).toBeInTheDocument();
 });
+
+
+test("it calls onUserAdd when the form submitted", () => {
+/
+//     STEPS OF WORKING:
+//     Render my component
+
+//     Find my input
+
+//     Simulate typing in a name
+
+//     Simulate typing in an email
+
+//     Find the button
+
+//     Simulate clicking the button to submit the form
+
+//     Assertion - to make sure 'onUserAdd' gets called with 'email/name'
+
+
+})
