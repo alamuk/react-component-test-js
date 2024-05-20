@@ -16,7 +16,8 @@ export function UserList({ users }) {
           <th>Email</th>
         </tr>
       </thead>
-      <tbody>{renderUsers}</tbody>
+      {/*<tbody data-testid="users">{renderUsers}</tbody>*/}
+      <tbody data-testid="users">{renderUsers}</tbody>
     </table>
   );
 }

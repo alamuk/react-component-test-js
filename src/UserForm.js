@@ -1,13 +1,16 @@
 import { useState } from "react";
 
 export function UserForm({ onUserAdd }) {
-  const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
 
   function handleSubmit(evt) {
     evt.preventDefault();
     // console.log(username, email);
     onUserAdd({ email, username });
+
+    setUsername("");
+    setEmail("");
   }
 
   return (
@@ -22,7 +25,7 @@ export function UserForm({ onUserAdd }) {
       </div>
 
       <div>
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Enter Email</label>
         <input
           id="email"
           value={email}
